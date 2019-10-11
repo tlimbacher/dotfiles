@@ -1,5 +1,7 @@
 # Thomas's dotfiles
 
+![Screenshot of neovim and terminal prompt in neovim terminal](https://imgur.com/a/c8krFe5)
+
 ## Installation
 The `bootstrap.sh` script will save a copy of your existing dotfiles in `~/.dotfiles_old`. However, if you
 want to give these dotfiles a try, you should first review the code and remove things you don’t want or need.
