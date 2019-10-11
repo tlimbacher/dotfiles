@@ -12,8 +12,8 @@ neovim. (see [neovim.yml](https://github.com/tlimbacher/dotfiles/blob/master/neo
 
 For conda, it is assumed that you have set up miniconda under `~/.miniconda3`.
 
-The first time you open neovim after the installation you have to do a `:PlugInstall` followed by a
-`:UpdateRemotePlugins`. This will install and register all vim plugin defined in
+At the first time you open neovim after the installation you have to do a `:PlugInstall` followed by a
+`:UpdateRemotePlugins`. This will install and register all vim plugins defined in my
 [init.vim](https://github.com/tlimbacher/dotfiles/blob/master/init.vim).
 
 ### Using Git and the bootstrap script
@@ -44,7 +44,6 @@ My `~/.extra` looks something like this:
 
 ```bash
 # Git credentials
-# Not in the repository, to prevent people from accidentally committing under my name
 GIT_AUTHOR_NAME="Thomas Limbacher"
 git config --global user.name "$GIT_AUTHOR_NAME"
 GIT_AUTHOR_EMAIL="user@domain.com"
