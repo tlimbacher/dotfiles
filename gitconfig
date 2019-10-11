@@ -18,6 +18,3 @@
 	prompt = false
 [push]
 	default = matching
-[user]
-	name = Thomas Limbacher
-	email = thomas.limbacher@igi.tugraz.at
