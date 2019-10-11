@@ -1,0 +1,23 @@
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore_global
+	autocrlf = input
+[alias]
+        co = checkout
+        br = branch
+        ci = commit
+        st = status
+        last = log -1 HEAD
+        lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
+        unstage = reset HEAD --
+[color]
+	ui = auto
+[diff]
+        tool = vimdiff
+[difftool]
+	prompt = false
+[push]
+	default = matching
+[user]
+	name = Thomas Limbacher
+	email = thomas.limbacher@igi.tugraz.at

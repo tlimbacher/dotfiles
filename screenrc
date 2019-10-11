@@ -1,0 +1,4 @@
+source .screen_layout
+layout save def
+startup_message off
+mousetrack on
