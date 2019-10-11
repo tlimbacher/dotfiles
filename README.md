@@ -6,18 +6,22 @@ want to give these dotfiles a try, you should first review the code and remove t
 
 The script will install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) and will create a
 [conda](https://docs.conda.io/en/latest/) environment for [neovim](https://github.com/neovim/neovim) if conda
-is installed. If you do not use conda you have to install the required packages manually (see
-[neovim.yml](https://github.com/tlimbacher/dotfiles/blob/master/neovim.yml)) in order to use neovim. For a
-list of (neo)vim plugins have a look at my [init.vim](https://github.com/tlimbacher/dotfiles/blob/master/init.vim).
+is installed. If you do not use conda you have to install the required packages manually in order to use
+neovim. (see [neovim.yml](https://github.com/tlimbacher/dotfiles/blob/master/neovim.yml)). For a list of
+(neo)vim plugins have a look at my [init.vim](https://github.com/tlimbacher/dotfiles/blob/master/init.vim).
 
 For conda, it is assumed that you have set up miniconda under `~/.miniconda3`.
 
+The first time you open neovim after the installation you have to do a `:PlugInstall` followed by a
+`:UpdateRemotePlugins`. This will install and register all vim plugin defined in
+[init.vim](https://github.com/tlimbacher/dotfiles/blob/master/init.vim).
+
 ### Using Git and the bootstrap script
 You can clone the repository wherever you want (I like to keep it in `~/.dotfiles`). The bootstrapper script
-will pull in the latest version and create symlinks from the home directory to any dotfiles in ~/.dotfiles.
+will pull in the latest version and create symlinks from the home directory to any dotfiles in `~/.dotfiles`.
 
 ```bash
-git clone https://github.com:tlimbacher/dotfiles.git ~./dotfiles && cd ~/.dotfiles && ./bootstrap.sh
+git clone https://github.com/tlimbacher/dotfiles.git ~./dotfiles && cd ~/.dotfiles && ./bootstrap.sh
 ```
 
 To update, `cd` into your local `dotfiles` repository and then:
