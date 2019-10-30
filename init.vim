@@ -193,6 +193,9 @@ let g:ale_python_trim_whitespace_executable = expand('~/.miniconda3/envs/neovim/
 let g:better_whitespace_guicolor='#EBCB8B'
 let g:better_whitespace_filetypes_blacklist = ['diff', 'gitcommit', 'unite', 'qf', 'help', 'markdown', '']
 
+" Gitgutter
+let g:gitgutter_max_signs=9999
+
 
 """ Custom Mappings
 " ------------------------------------------------------------------------------------------------------------
