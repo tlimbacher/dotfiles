@@ -2,13 +2,14 @@ name: neovim
 
 channels:
     - defaults
+    - conda-forge
 
 dependencies:
     - python=3.7
     - autopep8
     - flake8
     - isort
+    - neovim
     - pip
     - pip:
-        - neovim
         - neovim-remote

@@ -145,6 +145,7 @@ let NERDTreeSortOrder = ['archive', 'ANN', 'SNN', 'LICENSE', 'README.md', 'envir
 " Deoplete
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#yarp = 1
+let $VIRTUAL_ENV = $CONDA_PREFIX
 
 " Jedi
 let g:jedi#auto_initialization = 1
@@ -192,6 +193,9 @@ let g:ale_python_trim_whitespace_executable = expand('~/.miniconda3/envs/neovim/
 " Vim-better-whitespace
 let g:better_whitespace_guicolor='#EBCB8B'
 let g:better_whitespace_filetypes_blacklist = ['diff', 'gitcommit', 'unite', 'qf', 'help', 'markdown', '']
+
+" Vim-isort
+let g:vim_isort_config_overrides = {'line_length': 110}
 
 " Gitgutter
 let g:gitgutter_max_signs=9999
