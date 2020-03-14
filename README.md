@@ -23,7 +23,7 @@ You can clone the repository wherever you want (I like to keep it in `~/.dotfile
 will pull in the latest version and create symlinks from the home directory to any dotfiles in `~/.dotfiles`.
 
 ```bash
-git clone https://github.com/tlimbacher/dotfiles.git ~./dotfiles && cd ~/.dotfiles && ./bootstrap.sh
+git clone https://github.com/tlimbacher/dotfiles.git ~/.dotfiles && cd ~/.dotfiles && ./bootstrap.sh
 ```
 
 To update, `cd` into your local `dotfiles` repository and then:
