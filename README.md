@@ -18,6 +18,9 @@ At the first time you open neovim after the installation you have to do a `:Plug
 `:UpdateRemotePlugins`. This will install and register all vim plugins defined in my
 [init.vim](https://github.com/tlimbacher/dotfiles/blob/master/init.vim).
 
+For the [vim-devicons](https://github.com/ryanoasis/vim-devicons) plugin to work properly, you have to install
+a patched font from [nerd-fonts](https://github.com/ryanoasis/nerd-fonts#font-installation).
+
 ### Using Git and the bootstrap script
 You can clone the repository wherever you want (I like to keep it in `~/.dotfiles`). The bootstrapper script
 will pull in the latest version and create symlinks from the home directory to any dotfiles in `~/.dotfiles`.
