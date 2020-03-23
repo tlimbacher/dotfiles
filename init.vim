@@ -139,7 +139,7 @@ let g:NERDTreeCascadeSingleChildDir=0
 let g:NERDTreeDirArrowExpandable = '↠'
 let g:NERDTreeDirArrowCollapsible = '↡'
 let g:NERDTreeIgnore = ['\.pyc$', '__pycache__']
-let NERDTreeSortOrder = ['archive', 'ANN', 'SNN', 'LICENSE', 'README.md', 'environment.yml', 'hosts', 'srun', 'submit',
+let NERDTreeSortOrder = ['archive', 'ANN', 'SNN', 'Modules', 'Packages', 'LICENSE', 'README.md', 'environment.yml', 'hosts', 'srun', 'submit',
                         \'\.py', '*', 'data', 'utils', 'tests', 'models', 'results', 'scripts', '\/$']
 
 " Deoplete
