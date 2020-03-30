@@ -140,7 +140,7 @@ let g:NERDTreeDirArrowExpandable = '↠'
 let g:NERDTreeDirArrowCollapsible = '↡'
 let g:NERDTreeIgnore = ['\.pyc$', '__pycache__']
 let NERDTreeSortOrder = ['archive', 'ANN', 'SNN', 'Modules', 'Packages', 'LICENSE', 'README.md', 'environment.yml', 'hosts', 'srun', 'submit',
-                        \'\.py', '*', 'data', 'utils', 'tests', 'models', 'results', 'scripts', '\/$']
+                        \'\.py', '*', 'data', 'utils', 'tests', 'layers', 'models', 'results', 'scripts', '\/$']
 
 " Deoplete
 let g:deoplete#enable_at_startup = 1
