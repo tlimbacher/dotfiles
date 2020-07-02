@@ -4,6 +4,8 @@
 # Enable 256-color support
 export TERM="xterm-256color"
 
+test -r ~/.dir_colors && eval $(dircolors ~/.dir_colors)
+
 # Local executables
 export PATH="$HOME/.local/bin:$PATH"
 
