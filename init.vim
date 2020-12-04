@@ -14,11 +14,11 @@ Plug 'tpope/vim-fugitive'		                " Git wrapper
 Plug 'tpope/vim-sensible'		                " Defaults everyone can agree on
 Plug 'majutsushi/tagbar'		                " Displays tags in a window, ordered by scope
 Plug 'scrooloose/nerdtree'					    " File system explorer
-Plug 'davidhalter/jedi-vim'                     " Jedi for Python
+Plug 'ervandew/supertab'                        " Use <Tab> for all your insert completion needs
 Plug 'Shougo/deoplete.nvim',                    " Asynchronous completion framework
             \ {'do': ':UpdateRemotePlugins'}
 Plug 'deoplete-plugins/deoplete-jedi'           " Deoplete for Python
-Plug 'ervandew/supertab'                        " Use <Tab> for all your insert completion needs
+Plug 'Shougo/echodoc.vim'                       " Displays function signatures from completions
 Plug 'jiangmiao/auto-pairs'                     " Insert or delete brackets, parens, quotes in pair
 Plug 'Yggdroot/indentLine' 					    " Displaying vertical lines at each indentation level
 Plug 'heavenshell/vim-pydocstring' 			    " Generator for Python docstrings
@@ -46,6 +46,7 @@ set termguicolors
 filetype plugin indent on
 set tabstop=4 softtabstop=4 shiftwidth=4 expandtab smarttab autoindent
 set incsearch ignorecase smartcase hlsearch wrapscan cpoptions+=x
+let g:ale_disable_lsp = 1
 set textwidth=110 wrap breakindent showbreak=..
 set completeopt=noinsert,menuone,noselect
 set updatetime=100
@@ -122,7 +123,6 @@ let g:airline#extensions#hunks#enabled = 1
 let g:airline#extensions#tabline#formatter = 'default'
 let g:airline_section_z = ' %{strftime("%-I:%M %p")}'
 
-
 " TagBar
 let g:tagbar_width = 30
 let g:tagbar_compact = 1
@@ -144,20 +144,10 @@ let NERDTreeSortOrder = ['archive', 'ANN', 'SNN', 'Modules', 'Packages', 'LICENS
 
 " Deoplete
 let g:deoplete#enable_at_startup = 1
-let g:deoplete#yarp = 1
-let $VIRTUAL_ENV = $CONDA_PREFIX
 
-" Jedi
-let g:jedi#auto_initialization = 1
-let g:jedi#completions_enabled = 0
-let g:jedi#auto_vim_configuration = 0
-let g:jedi#smart_auto_mappings = 0
-let g:jedi#popup_on_dot = 0
-let g:jedi#completions_command = ""
-let g:jedi#show_call_signatures = 2
-let g:jedi#show_call_signatures_delay = 0
-let g:jedi#use_tabs_not_buffers = 0
-let g:jedi#enable_speed_debugging=0
+" Echodoc
+let g:echodoc#enable_at_startup = 1
+let g:echodoc#type = 'floating'
 
 " Supertab
 let g:SuperTabDefaultCompletionType = "context"
